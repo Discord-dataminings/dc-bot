@@ -1,7 +1,7 @@
 import re, discord, asyncio, json
 from discord.ext import commands
 import os, random, requests
-from keep_alive import keep_alive
+
 
 client = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -57,13 +57,6 @@ async def on_message(msg):
     await m.publish()
     await m.reply('<@&1107042029306912955>')
   await client.process_commands(msg)
-
-
-keep_alive()
-
-import discord
-from discord.ext import commands
-
 
 @client.command()
 async def giveaway_winner(ctx, winner: discord.User, message_link):
