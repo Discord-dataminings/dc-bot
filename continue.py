@@ -1,1 +1,4 @@
 import secrets
+v = """
+CONTINUE
+"""
